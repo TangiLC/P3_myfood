@@ -1,0 +1,263 @@
+.body {
+  text-decoration: none;
+  color: black;
+}
+
+.gradient-color {
+  background: linear-gradient(340deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%);
+}
+
+.button {
+  color: white;
+  font-weight: 600;
+}
+
+.function-num {
+  background-color: rgb(147, 86, 220);
+  color: white;
+}
+
+.icon-color {
+  opacity: 40%;
+}
+
+footer {
+  color: white;
+  background-color: black;
+}
+
+body {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: black;
+}
+
+h1, h2 {
+  font-family: "Shrikhand", cursive;
+}
+
+h3 {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 700;
+}
+
+h4 {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.function-num {
+  font-size: 0.6em;
+}
+
+footer {
+  font-size: 0.8em;
+  text-decoration: none;
+}
+
+footer > h2 {
+  padding-left: 35px;
+  padding-top: 30px;
+  font-weight: 500;
+}
+
+li > a {
+  color: white;
+}
+
+.button {
+  border-radius: 25px;
+  border: 0px solid white;
+  box-shadow: 6px 6px 5px 0px grey;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.Resto--img {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.Menu--carte {
+  border-radius: 12px;
+}
+
+.function-num {
+  width: 15px;
+  border-radius: 50%;
+  border: 1px solid #9356DC;
+  position: absolute;
+  left: 10px;
+  margin: 0;
+  margin-top: 10px;
+  padding: 0;
+  z-index: 1;
+}
+
+.function-button {
+  display: flex;
+  width: 100%;
+  border-radius: 15px;
+  border: 1px solid lightgrey;
+  box-shadow: 6px 6px 5px 0px grey;
+  padding: 10px;
+  padding-left: 30px;
+  margin: auto;
+  margin-bottom: 10px;
+  align-content: space-around;
+  gap: 30px;
+}
+
+.fonction-line {
+  width: 90%;
+}
+
+.Resto-vignette {
+  width: 100%;
+  height: 200px;
+  margin: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+footer {
+  width: 100%;
+  margin: 0;
+  padding-bottom: 30px;
+}
+
+.function-button:hover {
+  background-color: rgba(147, 86, 220, 0.3);
+}
+
+.function-button:hover .icon-color {
+  color: #9356DC;
+}
+
+.Favori {
+  position: relative;
+  left: 87%;
+  top: -2.6em;
+  font-size: 1.3em;
+  z-index: 2;
+}
+
+.Favori2 {
+  position: relative;
+  left: 83%;
+  top: -2.6em;
+  z-index: 1;
+  background-image: linear-gradient(340deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  opacity: 0%;
+  font-size: 1.27em;
+  transition: opacity 0.3s ease-in;
+  transition: font-size 0.2s ease-in 0.1s;
+  visibility: hidden;
+}
+
+.Favori:active {
+  visibility: hidden;
+}
+
+.Favori:active + .Favori2 {
+  visibility: visible;
+  opacity: 100%;
+  font-size: 1.3em;
+}
+
+body {
+  max-width: 600px;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.centered {
+  align-content: center;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+}
+
+.inL-B {
+  display: inline-block;
+}
+
+.localisation {
+  border: 1px solid black;
+  background-color: lightgrey;
+  padding: 2px;
+}
+
+.recherche {
+  border: none;
+}
+
+input[type=text] {
+  background-color: lightgrey;
+}
+
+.button {
+  width: 70%;
+  margin: auto;
+}
+
+.fonction-container {
+  flex-direction: column;
+}
+
+.fonction-line {
+  flex-direction: row;
+}
+
+.Resto-card {
+  flex-direction: column;
+}
+
+.Resto-Bloc {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  margin-left: 10px;
+  position: relative;
+}
+
+.Resto--txt {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.Tag-Nouveau {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  max-width: 80px;
+  background-color: #99E2D0;
+  color: rgb(41, 91, 226);
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 0.9em;
+  font-weight: 600;
+}
+
+footer > ul {
+  list-style-type: none;
+}
+/*# sourceMappingURL=main.css.map */
