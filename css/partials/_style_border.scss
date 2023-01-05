@@ -16,10 +16,10 @@
 }
 
 .function-num{
-   width : 15px;
+   width : 15px; height :15px;
    border-radius: 50%;
    border: 1px solid $primary;
-   position: absolute;
+   position: relative;
    left: 10px;
    margin : 0;
    margin-top: 10px;
