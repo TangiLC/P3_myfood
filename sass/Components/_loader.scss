@@ -144,8 +144,8 @@
      background: $loader-color-lighter;
      opacity: 60%;
      z-index: 2;
-     -webkit-animation: pourring 1.8s, salute_contenuD 1.7s ease 0.6s 3;
-     animation: pourring 1.8s, salute_contenuD 1.7s ease 0.6s 3;
+     -webkit-animation: pourring 1.8s infinite, salute_contenuD 1.7s ease 0.6s 3;
+     animation: pourring 1.8s infinite, salute_contenuD 1.7s ease 0.6s 3;
  }
  .contenuD::before {
      position: relative;
@@ -346,9 +346,8 @@
 }
 .typewriter h1{
     color: transparent;
-    position : absolute;
-    left : 32%;
-    bottom : 60px;
+    display : flex;
+    justify-content: space-around;
     overflow: hidden;
     white-space: nowrap;
     margin: auto;
@@ -361,9 +360,9 @@
 }
 .typewriter h4{
     color: transparent;
-    position : absolute;
-    left : 20%;
-    bottom : 30px;
+    display : flex;
+    justify-content: space-around;
+    
     overflow: hidden;
     white-space: nowrap;
     margin: auto;

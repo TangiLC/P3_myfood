@@ -4,17 +4,17 @@
 
 .function-button:hover .icon-color{color:$primary;}
 
-.button:hover {
-    opacity: .8;
-    
-}
-
 
 .position_heart{
     position : relative;
-    left : 87%;
-    top : -2.6em;
+    left : 89%;
+    top : -35px;
 }
+.position_heart--title{
+    position : relative;
+    left : 91%;
+    top : -60px;
+}    
 .Favori{
     position: relative;
     visibility: visible;
