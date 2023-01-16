@@ -9,17 +9,30 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/f69658589d.js" crossorigin="anonymous"></script>
   <style> @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
-          @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap');
+          @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
    </style>
   <link rel="stylesheet" href="css/main.css">
   
 </head>
+<div class="loader">
+  <div class="loading-picture">
+    <div class="verreG"></div>
+    <div class="contenuG"></div>
+    <div class="verreD"></div>
+    <div class="contenuD"></div>
+  </div>
+  <div class="typewriter"><h1>ohmyfood</h1><h4>Mise des petits plats dans les grands...</h4></div>    
+</div>
 <body>
-  <header>
-    <article class="container centered"><h1>ohmyfood</h1></article>
+  <header class="appear">
+    <div class="logo_header">
+      <a href="_self" class="invisible bigger_font"><i class="fa-solid fa-arrow-left"></i></a> 
+      <img src="images/logo/ohmyfood.png" class="logo_img">
+      <a href="_self" class="invisible bigger_font"><i class="fa-solid fa-arrow-left"></i></a> 
+ </div>
     
     <form class="localisation centered" action="/php.php">
         <i class="fa-solid fa-location-dot"></i>
@@ -27,14 +40,14 @@
     </form>
   </header>
 
-<article class="centered">
+<article class="txt-centered appear">
    <h3>Réservez le menu qui vous convient</h3>
    <div>Découvrez des restaurants d'exception, sélectionnés par nos soins.</div><br>
 
-   <a href="#Restaurants" class="gradient-color button centered">Explorer nos restaurants</a>
+   <a href="#Restaurants" class="gradient-color centered button">Explorer nos restaurants</a>
 </article>
 
-<article>
+<article class="appear">
    <h3>Fonctionnement</h3>
    <div class="fonction-container centered">
           <div class="fonction-line container"><div class="function-num">1</div>
@@ -61,7 +74,7 @@
    </div>
 </article>
 <main>
-<article id="Restaurants">
+<article id="Restaurants" class="appear">
    <h3>Restaurants</h3>
    <div class="container Resto-Bloc">
        <a class="Resto-card container" target="_self" href="pages/la-palette-du-gout.html">
@@ -75,8 +88,10 @@
          </div>
        </a>
    </div>
-   <div class="inL-B Favori"><i class="fa-solid fa-heart"></i></div>
-   <div class="inL-B Favori2"><i class="fa-solid fa-heart"></i></div>
+   <div class="position_heart inL-B">
+    <div class="inL-B Favori"><i class="fa-regular fa-heart"></i></div>
+    <div class="inL-B Favori2"><i class="fa-solid fa-heart"></i></div>     
+    </div>
 
    <div class="container Resto-Bloc">
     <a class="Resto-card container" target="_self" href="pages/la-note-enchantee.html">
@@ -90,8 +105,10 @@
       </div>
     </a>
 </div>
-<div class="inL-B Favori"><i class="fa-regular fa-heart"></i></div>
-<div class="inL-B Favori2"><i class="fa-solid fa-heart"></i></div>
+<div class="position_heart inL-B">
+  <div class="inL-B Favori"><i class="fa-regular fa-heart"></i></div>
+  <div class="inL-B Favori2"><i class="fa-solid fa-heart"></i></div>     
+  </div>
 
 <div class="container Resto-Bloc">
   <a class="Resto-card container" target="_self" href="pages/a-la-francaise.html">
@@ -105,8 +122,10 @@
     </div>
   </a>
 </div>
-<div class="inL-B Favori"><i class="fa-regular fa-heart"></i></div>
-<div class="inL-B Favori2"><i class="fa-solid fa-heart"></i></div>
+<div class="position_heart inL-B">
+  <div class="inL-B Favori"><i class="fa-regular fa-heart"></i></div>
+  <div class="inL-B Favori2"><i class="fa-solid fa-heart"></i></div>     
+  </div>
 
 <div class="container Resto-Bloc">
   <a class="Resto-card container" target="_self" href="pages/le-delice-des-sens.html">
@@ -120,11 +139,13 @@
     </div>
   </a>
 </div>
-<div class="inL-B Favori"><i class="fa-regular fa-heart"></i></div>
-<div class="inL-B Favori2"><i class="fa-solid fa-heart"></i></div>
+<div class="position_heart inL-B">
+  <div class="inL-B Favori"><i class="fa-regular fa-heart"></i></div>
+  <div class="inL-B Favori2"><i class="fa-solid fa-heart"></i></div>     
+  </div>
 </article>
 </main>
-<footer>
+<footer class="appear">
   <h2>ohmyfood</h2>
   <ul>
     <li><a href="" target="_blank"><i class="fa-solid fa-utensils"></i>&nbsp;Proposer un restaurant</a></li>

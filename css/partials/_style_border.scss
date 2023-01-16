@@ -2,8 +2,7 @@
    border-radius: 25px;
    border: 0px solid white;
    box-shadow: 6px 6px 5px 0px $button-shadow;
-   padding : 5px;
-   padding-left: 15px; padding-right: 15px;
+   padding : 12px;
    }
 
 .Resto--img{
@@ -47,7 +46,7 @@
 
 .Resto-vignette{
    width : 100%;
-   height : 200px;
+   height : 250px;
    margin : auto;
    object-fit: cover;
 
@@ -56,4 +55,7 @@
 footer{
    width: 100%;
    margin :0;
-   padding-bottom: 30px;}
+   padding-bottom: 30px;
+   margin-top : 40px;}
+
+ul > li{padding-top : 6px;}
