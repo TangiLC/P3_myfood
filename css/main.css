@@ -308,7 +308,6 @@ top : -2.6em;*/
 }
 
 .Favori:active {
-  cursor: url("./images/logo/heart.png");
   content: "";
   opacity: 0;
   visibility: hidden;
