@@ -22,6 +22,29 @@
   opacity: 40%;
 }
 
+.body {
+  text-decoration: none;
+  color: black;
+}
+
+.gradient-color {
+  background: linear-gradient(340deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%);
+}
+
+.button {
+  color: white;
+  font-weight: 600;
+}
+
+.function-num {
+  background-color: rgb(147, 86, 220);
+  color: white;
+}
+
+.icon-color {
+  opacity: 40%;
+}
+
 footer {
   color: white;
   background-color: black;
@@ -234,6 +257,71 @@ top : -2.6em;*/
   transform: scale(1.1);
 }
 
+.function-button:hover {
+  background-color: rgba(147, 86, 220, 0.3);
+}
+
+.function-button:hover .icon-color {
+  color: #9356DC;
+}
+
+.position_heart {
+  position: relative;
+  left: 89%;
+  top: -35px;
+}
+
+.position_heart--title {
+  position: relative;
+  left: 91%;
+  top: -60px;
+}
+
+.Favori {
+  position: relative;
+  visibility: visible;
+  opacity: 1;
+  /*left : 87%;
+  top : -2.6em;*/
+  font-size: 1.3em;
+  z-index: 2;
+  color: black;
+  /*transition : color 0.1s 0.3s;*/
+  /*transition : visibility 0.1s 0.7s;*/
+  transition: opacity 0.8s;
+}
+
+.Favori2 {
+  position: relative;
+  left: -22px; /*
+top : -2.6em;*/
+  font-size: 1.3em;
+  z-index: 1;
+  background-image: linear-gradient(340deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  opacity: 0;
+  visibility: visible;
+  transform: scale(0.1);
+  transition: transform 0.8s;
+  transition: opacity 0.6s 0.2s;
+}
+
+.Favori:active {
+  cursor: url("./images/logo/heart.png");
+  content: "";
+  opacity: 0;
+  visibility: hidden;
+}
+
+.Favori:active + .Favori2 {
+  content: "";
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1.1);
+}
+
 @-webkit-keyframes zoom_in {
   0% {
     transform: scale(0.97) translateY(20px);
@@ -356,6 +444,73 @@ top : -2.6em;*/
     visibility: collapse;
     opacity: 0;
   }
+}
+
+@keyframes disapear {
+  0% {
+    visibility: visible;
+    opacity: 1;
+  }
+  96% {
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    visibility: collapse;
+    opacity: 0;
+  }
+}
+.loading-picture {
+  position: relative;
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin: auto;
+  padding: 10px;
+  visibility: visible;
+  z-index: 9;
+}
+
+.typewriter {
+  padding-bottom: 20px;
+}
+
+.appear {
+  -webkit-animation: appear 3.8s;
+          animation: appear 3.8s;
+}
+
+@keyframes appear {
+  0% {
+    visibility: collapse;
+    opacity: 0;
+  }
+  99% {
+    visibility: collapse;
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+.loader {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: absolute;
+  content: "";
+  width: 100%;
+  max-width: 700px;
+  margin: auto;
+  margin-top: 120px;
+  height: auto;
+  z-index: 9;
+  justify-content: center;
+  background: linear-gradient(340deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%);
+  -webkit-animation: disapear 4s 0s forwards 1;
+          animation: disapear 4s 0s forwards 1;
 }
 
 @keyframes disapear {
@@ -807,84 +962,6 @@ top : -2.6em;*/
     border-color: rgb(240, 240, 240);
   }
 }
-@media screen and (min-width: 768px) {
-  body {
-    max-width: 980px;
-    display: grid;
-    grid-template-columns: auto 560px;
-    grid-gap: 5px;
-    grid-template-rows: 100px auto auto auto;
-  }
-  .box1 {
-    grid-column: 1/2;
-    grid-row: 1/2;
-  }
-  .box2 {
-    grid-column: 1/2;
-    grid-row: 2/3;
-  }
-  .box3 {
-    grid-column: 1/2;
-    grid-row: 3/4;
-  }
-  .box4 {
-    grid-column: 1/2;
-    grid-row-start: 4/5;
-  }
-  .box5 {
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 0px;
-    justify-content: space-evenly;
-  }
-  .Resto-card {
-    width: 450px;
-    height: 280px;
-    margin: 10px 0px 20px 0px;
-  }
-  .box5 h3 {
-    visibility: collapse;
-    display: none;
-  }
-  .position_heart {
-    position: relative;
-    left: 70%;
-    bottom: 270px;
-  }
-  .Tag-Nouveau {
-    right: 140px;
-  }
-  .Resto-visite {
-    height: 150px;
-  }
-}
-@media screen and (min-width: 996px) {
-  body {
-    max-width: 1200px;
-    display: grid;
-    grid-template-columns: auto 820px;
-    grid-gap: 20px;
-    grid-template-rows: 100px auto auto auto;
-  }
-  .box5 {
-    flex-direction: row;
-  }
-  .Resto-card {
-    width: 340px;
-    height: 300px;
-    margin: 10px 0px 20px 0px;
-  }
-  .position_heart {
-    position: relative;
-    left: -5%;
-    top: 270px;
-  }
-  .Tag-Nouveau {
-    right: 10px;
-  }
-}
 body {
   max-width: 700px;
   margin: auto;
@@ -1077,5 +1154,84 @@ footer > ul {
 
 .button_commande {
   display: grid;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    max-width: 980px;
+    display: grid;
+    grid-template-columns: auto 560px;
+    grid-gap: 5px;
+    grid-template-rows: 100px auto auto auto;
+  }
+  .box1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .box2 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .box3 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .box4 {
+    grid-column: 1/2;
+    grid-row-start: 4/5;
+  }
+  .box5 {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0px;
+    justify-content: space-evenly;
+  }
+  .Resto-card {
+    width: 450px;
+    height: 280px;
+    margin: 10px 0px 20px 0px;
+  }
+  .box5 h3 {
+    visibility: collapse;
+    display: none;
+  }
+  .position_heart {
+    position: relative;
+    left: 70%;
+    bottom: 270px;
+  }
+  .Tag-Nouveau {
+    right: 140px;
+  }
+  .Resto-visite {
+    height: 150px;
+  }
+}
+@media screen and (min-width: 996px) {
+  body {
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: auto 820px;
+    grid-gap: 20px;
+    grid-template-rows: 100px auto auto auto;
+  }
+  .box5 {
+    flex-direction: row;
+  }
+  .Resto-card {
+    width: 340px;
+    height: 300px;
+    margin: 10px 0px 20px 0px;
+  }
+  .position_heart {
+    position: relative;
+    left: -5%;
+    top: 270px;
+  }
+  .Tag-Nouveau {
+    right: 10px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
