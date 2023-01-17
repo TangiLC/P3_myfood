@@ -1,0 +1,49 @@
+@media screen and (min-width: 768px) {
+    body {max-width: 980px;
+         display: grid;
+         grid-template-columns:  auto 560px;
+         grid-gap: 5px;
+         grid-template-rows: 100px auto auto auto;}
+    .box1{
+          grid-column: 1 / 2;
+          grid-row: 1 / 2;
+          }
+    .box2{
+          grid-column: 1 / 2;
+          grid-row: 2 / 3;
+          }
+    .box3{
+          grid-column: 1 / 2;
+          grid-row: 3 / 4;
+          }
+    .box4{
+          grid-column: 1 / 2;
+          grid-row-start: 4 / 5;
+          }
+    .box5{margin-top:40px;
+         display : flex;
+         flex-direction: column;
+         flex-wrap: wrap;
+         gap: 0px;
+         justify-content: space-evenly;     }
+ 
+     .Resto-card{width : 450px; height : 280px; margin : 10px 0px 20px 0px;}
+     .box5 h3{visibility: collapse; display : none;}
+     .position_heart {position : relative; left: 70%; bottom: 270px;}
+     .Tag-Nouveau{right:140px;}
+     .Resto-visite{height : 150px;}
+      
+ }
+ 
+ @media screen and (min-width: 996px) {
+     body {max-width: 1200px;
+         display: grid;
+         grid-template-columns:  auto 820px;
+         grid-gap: 20px;
+         grid-template-rows: 100px auto auto auto;}
+         .box5{flex-direction: row;}    
+     .Resto-card{width : 340px; height : 300px; margin : 10px 0px 20px 0px;}
+     .position_heart {position : relative; left: -5%; top: 270px;}
+     .Tag-Nouveau{right:10px;}
+ 
+ }

@@ -1,0 +1,35 @@
+$primary : #9356DC;
+$prim_rgba : rgba(147,86,220,1);
+$secondary : #FF79DA;
+$sec_rgba : rgba(255,121,218,1);
+$tertiary : #99E2D0;
+$button-shadow : grey;
+$button-txt : white;
+$light-backgrnd : lightgrey;
+$footer-backgrnd : black;
+$main-txt : black;
+$Tag-txt : rgb(41, 91, 226);
+$loader-color-dark: rgb(160,160,160);
+$loader-color-lighter : rgb(240,240,240);
+
+
+.body{text-decoration: none;
+    color : $main-txt;
+}
+
+.gradient-color{background: linear-gradient(340deg, $prim_rgba 0%, $sec_rgba 100%);}
+
+.button{color:$button-txt;
+        font-weight: 600;}
+
+.function-num{background-color: $prim_rgba;
+              color:$button-txt;}
+
+.icon-color{
+    opacity: 40%;
+}
+
+footer{ 
+    color : $button-txt;
+    background-color: $footer-backgrnd;
+}

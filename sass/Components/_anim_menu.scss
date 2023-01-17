@@ -1,0 +1,22 @@
+@keyframes zoom_in {
+    0%{transform: scale(.97) translateY(20px); opacity : 40%;}
+    98%{transform: scale(1.02) translateY(-2px); opacity : 98%;}
+    100%{transform: scale(1)  translateY(0px); opacity : 100%;}
+}
+@keyframes spinning {
+    0% {transform : rotate(0deg);}
+    100% {transform : rotate(360deg);}
+
+}
+
+.Course_price:active +.Price_check >i{
+    visibility: visible;
+    display: inline-block;
+    animation : spinning .8s;
+}
+
+.Course_price:active +.Price_check{
+     visibility: visible;
+     display: inline-block;
+     
+}

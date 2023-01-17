@@ -1,0 +1,66 @@
+.button{
+   border-radius: 25px;
+   border: 0px solid white;
+   box-shadow: 6px 6px 5px 0px $button-shadow;
+   padding : 12px;
+   }
+
+.Resto--img{
+   border-top-left-radius: 12px;
+   border-top-right-radius: 12px;
+}
+
+.Menu--carte{
+   border-radius: 12px;
+}
+
+.function-num{
+   width : 15px; height :15px;
+   border-radius: 50%;
+   border: 1px solid $primary;
+   position: relative;
+   left: 10px;
+   margin : 0;
+   margin-top: 10px;
+   padding : 0;
+   z-index: 1;
+}
+
+.function-button{
+   display: flex;
+   width : 100%;
+   border-radius: 15px;
+   border: 1px solid $light-backgrnd;
+   box-shadow: 6px 6px 5px 0px $button-shadow;
+   padding : 10px;
+   padding-left: 30px;
+   margin : auto;
+   margin-bottom: 10px;
+   align-content: space-around;
+   gap : 30px;
+   }
+
+.fonction-line{width: 90%;
+   
+}
+
+.Resto-vignette{
+   width : 100%;
+   height : 250px;
+   margin : auto;
+   object-fit: cover;
+}
+.Resto-visite{
+   width : 100%;
+   height : 200px;
+   margin : auto;
+   object-fit: cover;
+}
+
+footer{
+   width: 100%;
+   margin :0;
+   padding-bottom: 30px;
+   margin-top : 40px;}
+
+ul > li{padding-top : 6px;}
