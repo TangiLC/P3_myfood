@@ -440,7 +440,7 @@ top : -2.6em;*/
   }
   100% {
     visibility: collapse;
-    opacity: 0;
+    opacity: 0; z-index:-10;
   }
 }
 
@@ -455,7 +455,7 @@ top : -2.6em;*/
   }
   100% {
     visibility: collapse;
-    opacity: 0;
+    opacity: 0; z-index:-10;
   }
 }
 .loading-picture {
@@ -1177,6 +1177,8 @@ footer > ul {
     grid-row: 4/5;
   }
   .box5 {
+    grid-column: 2/3;
+    grid-row: 1/5;
     margin-top: 40px;
     display: flex;
     flex-direction: column;
