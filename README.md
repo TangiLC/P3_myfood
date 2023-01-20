@@ -9,4 +9,6 @@ Projet d'animations par keyframes et transition des éléments suivants sur les 
 
 Avec également des modifications d'éléments au survol
 
+et coupure des mots dépassant la largeur du cadre remplacement par ... (ellipsis)
+
 Site responsive en mobile first
