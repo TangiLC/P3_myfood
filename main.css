@@ -90,7 +90,7 @@ footer {
 
 .Resto-vignette {
   width: 100%;
-  height: 250px;
+  height: 225px;
   margin: auto;
   -o-object-fit: cover;
      object-fit: cover;
@@ -144,13 +144,15 @@ h4 {
 h5 {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  margin: 10px 0px 10px 0px;
-  padding: 0;
+  font-size:1.1em;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 2px 0px;
   text-transform: uppercase;
 }
 
 h5 > span {
-  border-bottom: 1px solid #99E2D0;
+  border-bottom: 2px solid #99E2D0;
+  padding-bottom: 3px;
 }
 
 h1 {
@@ -202,7 +204,7 @@ li > a {
 .position_heart--title {
   position: relative;
   left: 91%;
-  top: -60px;
+  top: -50px;
 }
 
 .Favori {
@@ -307,11 +309,11 @@ top : -2.6em;*/
 
 @-webkit-keyframes zoom_in {
   0% {
-    transform: scale(0.97) translateY(20px);
-    opacity: 40%;
+    transform: scale(0.92) translateY(25px);
+    opacity: 10%;
   }
   98% {
-    transform: scale(1.02) translateY(-2px);
+    transform: scale(1.04) translateY(-3px);
     opacity: 98%;
   }
   100% {
@@ -350,14 +352,14 @@ top : -2.6em;*/
     transform: rotate(360deg);
   }
 }
-.Course_price:active + .Price_check > i {
+.indiv_course:active > .Price_check  i {
   visibility: visible;
   display: inline-block;
   -webkit-animation: spinning 0.8s;
           animation: spinning 0.8s;
 }
 
-.Course_price:active + .Price_check {
+.indiv_course:active > .Price_check {
   visibility: visible;
   display: inline-block;
 }
@@ -396,6 +398,7 @@ top : -2.6em;*/
     opacity: 1;
   }
 }
+
 .loader {
   display: flex;
   flex-direction: column;
@@ -485,23 +488,6 @@ top : -2.6em;*/
     visibility: visible;
     opacity: 1;
   }
-}
-.loader {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  position: absolute;
-  content: "";
-  width: 100%;
-  max-width: 700px;
-  margin: auto;
-  margin-top: 120px;
-  height: auto;
-  z-index: 9;
-  justify-content: center;
-  background: linear-gradient(340deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%);
-  -webkit-animation: disapear 4s 0s forwards 1;
-          animation: disapear 4s 0s forwards 1;
 }
 
 @keyframes disapear {
@@ -990,7 +976,8 @@ header {
 .logo_header {
   display: flex;
   justify-content: space-between;
-  margin : 10px;
+  padding : 10px;
+  background: white;
 }
 
 .container {
@@ -1086,8 +1073,8 @@ input[type=text] {
   top: -20px;
   margin: -5px 0px -10px 0px;
   border-radius: 16px;
-  border: 1px solid white;
-  background-color: white;
+  border: 1px solid #EEE;
+  background: #EEE;
   padding: 0px;
   height: 80px;
   width: 100%;
@@ -1096,8 +1083,10 @@ input[type=text] {
 .Bloc_Course {
   display: flex;
   flex-direction: column;
-  width: 99%;
-  margin-bottom: 20px;
+  width: 95%;
+  gap:10px;
+  margin:auto;
+  margin-bottom : 25px;
 }
 
 .indiv_course {
@@ -1105,19 +1094,23 @@ input[type=text] {
   flex-direction: row;
   justify-content: space-between;
   border-radius: 15px;
+  background: white;
   border: 1px solid white;
-  box-shadow: 2px 2px 3px grey;
+  box-shadow: 2px 2px 3px 1px #CCC;
   margin: 5px 0px 3px 0px;
   font-size: 0.85em;
-  -webkit-animation: zoom_in 0.4s;
-          animation: zoom_in 0.4s;
+  -webkit-animation: zoom_in 0.6s;
+          animation: zoom_in 0.6s;
 }
 
 .Course_price {
   width: 35px;
   display: flex;
-  align-self: flex-end;
-  padding: 6px;
+  align-self: end;
+  padding: 10px;
+  margin-bottom:10px;
+  font-weight: 600;
+  font-size:1.05em;
 }
 
 .Price_check {
@@ -1127,15 +1120,20 @@ input[type=text] {
   content: "";
   background-color: #99E2D0;
   border-radius: 0px 15px 15px 0px;
+  border:1px solid #99E2D0;
   text-align: center;
   padding: 10px;
   font-size: 1.4em;
   color: white;
+  margin: -1px;
+}
+.Price_check i{
+  margin-top : 12px;
 }
 
 .indiv_txt {
   width: 100%;
-  padding: 6px;
+  padding: 15px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -1146,6 +1144,7 @@ input[type=text] {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  margin-bottom: 2px;
 }
 
 .Tag-Nouveau {
@@ -1174,7 +1173,7 @@ footer > ul {
     max-width: 980px;
     display: grid;
     grid-template-columns: auto 560px;
-    grid-gap: 5px;
+    grid-gap: 0px;
     grid-template-rows: 100px auto auto auto;
   }
   .box1 {
@@ -1194,14 +1193,15 @@ footer > ul {
     grid-row: 4/5;
   }
   .box5 {
-    grid-column: 2/3;
-    grid-row: 1/5;
+
     margin-top: 40px;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-direction: row;
+    grid-auto-flow: dense;
     gap: 0px;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    background: #EEE;
   }
   .Resto-card {
     width: 450px;
@@ -1214,8 +1214,8 @@ footer > ul {
   }
   .position_heart {
     position: relative;
-    left: 70%;
-    bottom: 270px;
+    left: -10%;
+    top: 250px;
   }
   .Tag-Nouveau {
     right: 140px;
@@ -1229,11 +1229,18 @@ footer > ul {
     max-width: 1200px;
     display: grid;
     grid-template-columns: auto 820px;
-    grid-gap: 20px;
+    grid-gap: 0px;
     grid-template-rows: 100px auto auto auto;
   }
   .box5 {
+    margin-top: 40px;
+    display: flex;
     flex-direction: row;
+    grid-auto-flow: dense; 
+    gap: 0px;
+   justify-content: space-evenly;
+    flex-wrap: wrap;
+    background: #EEE;
   }
   .Resto-card {
     width: 340px;
