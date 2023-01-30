@@ -13,13 +13,10 @@
   font-weight: 600;
 }
 
-.function-num {
-  background-color: rgb(147, 86, 220);
-  color: white;
-}
 
 .icon-color {
   opacity: 40%;
+  padding-left:15px;
 }
 
 .body {
@@ -36,25 +33,14 @@
   font-weight: 600;
 }
 
-.function-num {
-  background-color: rgb(147, 86, 220);
-  color: white;
-}
-
-.icon-color {
-  opacity: 40%;
+.fond-clair{
+  background-color: #EEEEEE;
+  margin:0px;
 }
 
 footer {
   color: white;
   background-color: black;
-}
-
-.button {
-  border-radius: 25px;
-  border: 0px solid white;
-  box-shadow: 6px 6px 5px 0px grey;
-  padding: 12px;
 }
 
 .Resto--img {
@@ -67,39 +53,44 @@ footer {
 }
 
 .function-num {
-  width: 15px;
-  height: 15px;
+  background-color: rgb(147, 86, 220);
+  color: white;
+  font-size: 0.6em;
+  width: 16px;
+  height: 14px;
   border-radius: 50%;
-  border: 1px solid #9356DC;
+  border: 3px solid #9356DC;
   position: relative;
   left: 10px;
+  top : 15px;
   margin: 0;
   margin-top: 10px;
-  padding: 0;
+  padding-top: 2px;
   z-index: 1;
 }
 
 .function-button {
   display: flex;
   width: 100%;
-  border-radius: 15px;
-  border: 1px solid lightgrey;
-  box-shadow: 6px 6px 5px 0px grey;
-  padding: 10px;
-  padding-left: 30px;
+  border-radius: 22px;
+  background-color: rgba(245,245,245,.5);
+  box-shadow: 2px 5px 5px 2px #CCC;
+  padding: 25px 15px 25px 15px;
   margin: auto;
   margin-bottom: 10px;
   align-content: space-around;
-  gap: 30px;
+  gap: 20px;
+  font-weight: 600;
 }
 
 .fonction-line {
   width: 90%;
+  margin-bottom : 20px;
 }
 
 .Resto-vignette {
   width: 100%;
-  height: 250px;
+  height: 225px;
   margin: auto;
   -o-object-fit: cover;
      object-fit: cover;
@@ -138,12 +129,14 @@ h1, h2 {
 h3 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
+  margin : 30px 20px 10px 10px;
+  padding: 50px 0px 15px 0px;
 }
 
 h4 {
   font-family: "Roboto", sans-serif;
   font-weight: 600;
-  font-size: 1em;
+  font-size: 1.1em;
   margin: 0;
   padding: 0;
 }
@@ -151,13 +144,15 @@ h4 {
 h5 {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  margin: 10px 0px 10px 0px;
-  padding: 0;
+  font-size:1.1em;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 2px 0px;
   text-transform: uppercase;
 }
 
 h5 > span {
-  border-bottom: 1px solid #99E2D0;
+  border-bottom: 2px solid #99E2D0;
+  padding-bottom: 3px;
 }
 
 h1 {
@@ -173,13 +168,13 @@ a {
   color: black;
 }
 
-.function-num {
-  font-size: 0.6em;
-}
+
 
 footer {
   font-size: 0.8em;
   text-decoration: none;
+  border-top:10px solid black;
+  margin:0px;
 }
 
 footer > h2 {
@@ -202,14 +197,14 @@ li > a {
 
 .position_heart {
   position: relative;
-  left: 89%;
-  top: -35px;
+  left: 88%;
+  top: -70px;
 }
 
 .position_heart--title {
   position: relative;
   left: 91%;
-  top: -60px;
+  top: -50px;
 }
 
 .Favori {
@@ -218,7 +213,7 @@ li > a {
   opacity: 1;
   /*left : 87%;
   top : -2.6em;*/
-  font-size: 1.3em;
+  font-size: 1.6em;
   z-index: 2;
   color: black;
   /*transition : color 0.1s 0.3s;*/
@@ -230,7 +225,7 @@ li > a {
   position: relative;
   left: -22px; /*
 top : -2.6em;*/
-  font-size: 1.3em;
+  font-size: 1.6em;
   z-index: 1;
   background-image: linear-gradient(340deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%);
   -webkit-background-clip: text;
@@ -256,18 +251,10 @@ top : -2.6em;*/
   transform: scale(1.1);
 }
 
-.function-button:hover {
-  background-color: rgba(147, 86, 220, 0.3);
-}
-
-.function-button:hover .icon-color {
-  color: #9356DC;
-}
-
 .position_heart {
   position: relative;
-  left: 89%;
-  top: -35px;
+  left: 88%;
+  top: -70px;
 }
 
 .position_heart--title {
@@ -322,11 +309,11 @@ top : -2.6em;*/
 
 @-webkit-keyframes zoom_in {
   0% {
-    transform: scale(0.97) translateY(20px);
-    opacity: 40%;
+    transform: scale(0.92) translateY(25px);
+    opacity: 10%;
   }
   98% {
-    transform: scale(1.02) translateY(-2px);
+    transform: scale(1.04) translateY(-3px);
     opacity: 98%;
   }
   100% {
@@ -365,14 +352,14 @@ top : -2.6em;*/
     transform: rotate(360deg);
   }
 }
-.Course_price:active + .Price_check > i {
+.indiv_course:active > .Price_check  i {
   visibility: visible;
   display: inline-block;
   -webkit-animation: spinning 0.8s;
           animation: spinning 0.8s;
 }
 
-.Course_price:active + .Price_check {
+.indiv_course:active > .Price_check {
   visibility: visible;
   display: inline-block;
 }
@@ -411,6 +398,7 @@ top : -2.6em;*/
     opacity: 1;
   }
 }
+
 .loader {
   display: flex;
   flex-direction: column;
@@ -500,23 +488,6 @@ top : -2.6em;*/
     visibility: visible;
     opacity: 1;
   }
-}
-.loader {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  position: absolute;
-  content: "";
-  width: 100%;
-  max-width: 700px;
-  margin: auto;
-  margin-top: 120px;
-  height: auto;
-  z-index: 9;
-  justify-content: center;
-  background: linear-gradient(340deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%);
-  -webkit-animation: disapear 4s 0s forwards 1;
-          animation: disapear 4s 0s forwards 1;
 }
 
 @keyframes disapear {
@@ -905,11 +876,11 @@ top : -2.6em;*/
   margin: auto;
   font-size: 1.3em;
   font-weight: 500;
-  letter-spacing: 0.25em;
+  letter-spacing: 0.35em;
   z-index: 9;
   content: "";
-  -webkit-animation: typing 5s steps(60, end);
-          animation: typing 5s steps(60, end);
+  -webkit-animation: typing 4s steps(50, end);
+          animation: typing 4s steps(50, end);
 }
 
 .typewriter h4 {
@@ -921,12 +892,12 @@ top : -2.6em;*/
   white-space: nowrap;
   margin: auto;
   font-size: 0.8em;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
   border-right: 0.1em solid transparent;
   z-index: 9;
   content: "";
-  -webkit-animation: typing 2.9s 1s steps(60, end), blink_line 0.4s 1s step-end 10;
-          animation: typing 2.9s 1s steps(60, end), blink_line 0.4s 1s step-end 10;
+  -webkit-animation: typing 2.9s .4s steps(50, end), blink_line 0.4s 1s step-end 10;
+          animation: typing 2.9s .4s steps(50, end), blink_line 0.4s 1s step-end 10;
 }
 
 @-webkit-keyframes typing {
@@ -985,6 +956,15 @@ header {
 
 .txt-centered {
   text-align: center;
+  padding: 15px;
+}
+.txt-centered >h3{
+  padding: 15px 50px 10px 50px;
+  font-size: 1.2em;
+  font-weight: 900;
+}
+.txt-centered >div{
+  padding: 5px 30px 5px 30px;
 }
 
 .centered {
@@ -996,6 +976,8 @@ header {
 .logo_header {
   display: flex;
   justify-content: space-between;
+  padding : 10px;
+  background: white;
 }
 
 .container {
@@ -1023,9 +1005,9 @@ header {
 }
 
 .localisation {
-  border: 1px solid black;
-  background-color: lightgrey;
-  padding: 2px;
+  background-color: #DDDDDD;
+  box-shadow: inset 0px 3px 3px #CCC;
+  padding: 15px;
 }
 
 .recherche {
@@ -1033,12 +1015,17 @@ header {
 }
 
 input[type=text] {
-  background-color: lightgrey;
+  background-color: #DDDDDD;
+  font-weight : 600;
 }
 
 .button {
+  border-radius: 25px;
+  border: 0px solid white;
+  box-shadow: 2px 5px 5px 2px #CCC;
   width: 60%;
   margin: 30px auto 50px auto;
+  padding: 20px 10px 20px 10px;
 }
 
 .button:hover {
@@ -1055,6 +1042,11 @@ input[type=text] {
 
 .Resto-card {
   flex-direction: column;
+  border-radius: 12px;
+  border-color: #EEE;
+  background-color: white;
+  box-shadow: 2px 5px 5px 2px #CCC;
+  width: 97%;
 }
 
 .Resto-Bloc {
@@ -1070,6 +1062,10 @@ input[type=text] {
   gap: 20px;
   justify-content: space-between;
   margin-top: 10px;
+  padding-left:10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  line-height: 1.5;
 }
 
 .Resto-top {
@@ -1077,8 +1073,8 @@ input[type=text] {
   top: -20px;
   margin: -5px 0px -10px 0px;
   border-radius: 16px;
-  border: 1px solid white;
-  background-color: white;
+  border: 1px solid #EEE;
+  background: #EEE;
   padding: 0px;
   height: 80px;
   width: 100%;
@@ -1087,8 +1083,10 @@ input[type=text] {
 .Bloc_Course {
   display: flex;
   flex-direction: column;
-  width: 99%;
-  margin-bottom: 20px;
+  width: 95%;
+  gap:10px;
+  margin:auto;
+  margin-bottom : 25px;
 }
 
 .indiv_course {
@@ -1096,19 +1094,23 @@ input[type=text] {
   flex-direction: row;
   justify-content: space-between;
   border-radius: 15px;
+  background: white;
   border: 1px solid white;
-  box-shadow: 2px 2px 3px grey;
+  box-shadow: 2px 2px 3px 1px #CCC;
   margin: 5px 0px 3px 0px;
   font-size: 0.85em;
-  -webkit-animation: zoom_in 0.4s;
-          animation: zoom_in 0.4s;
+  -webkit-animation: zoom_in 0.6s;
+          animation: zoom_in 0.6s;
 }
 
 .Course_price {
   width: 35px;
   display: flex;
-  align-self: flex-end;
-  padding: 6px;
+  align-self: end;
+  padding: 10px;
+  margin-bottom:10px;
+  font-weight: 600;
+  font-size:1.05em;
 }
 
 .Price_check {
@@ -1118,15 +1120,20 @@ input[type=text] {
   content: "";
   background-color: #99E2D0;
   border-radius: 0px 15px 15px 0px;
+  border:1px solid #99E2D0;
   text-align: center;
   padding: 10px;
   font-size: 1.4em;
   color: white;
+  margin: -1px;
+}
+.Price_check i{
+  margin-top : 12px;
 }
 
 .indiv_txt {
   width: 100%;
-  padding: 6px;
+  padding: 15px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -1137,17 +1144,18 @@ input[type=text] {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  margin-bottom: 2px;
 }
 
 .Tag-Nouveau {
   position: absolute;
-  right: 10px;
+  right: 25px;
   top: 20px;
   max-width: 80px;
   background-color: #99E2D0;
-  color: rgb(41, 91, 226);
+  color: #6B9E91;
   padding-left: 10px;
-  padding-right: 10px;
+  padding: 10px;
   font-size: 0.9em;
   font-weight: 600;
 }
@@ -1165,7 +1173,7 @@ footer > ul {
     max-width: 980px;
     display: grid;
     grid-template-columns: auto 560px;
-    grid-gap: 5px;
+    grid-gap: 0px;
     grid-template-rows: 100px auto auto auto;
   }
   .box1 {
@@ -1185,18 +1193,19 @@ footer > ul {
     grid-row: 4/5;
   }
   .box5 {
-    grid-column: 2/3;
-    grid-row: 1/5;
+
     margin-top: 40px;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-direction: row;
+    grid-auto-flow: dense;
     gap: 0px;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    background: #EEE;
   }
   .Resto-card {
     width: 450px;
-    height: 280px;
+    height: 310px;
     margin: 10px 0px 20px 0px;
   }
   .box5 h3 {
@@ -1205,8 +1214,8 @@ footer > ul {
   }
   .position_heart {
     position: relative;
-    left: 70%;
-    bottom: 270px;
+    left: -10%;
+    top: 250px;
   }
   .Tag-Nouveau {
     right: 140px;
@@ -1220,15 +1229,22 @@ footer > ul {
     max-width: 1200px;
     display: grid;
     grid-template-columns: auto 820px;
-    grid-gap: 20px;
+    grid-gap: 0px;
     grid-template-rows: 100px auto auto auto;
   }
   .box5 {
+    margin-top: 40px;
+    display: flex;
     flex-direction: row;
+    grid-auto-flow: dense; 
+    gap: 0px;
+   justify-content: space-evenly;
+    flex-wrap: wrap;
+    background: #EEE;
   }
   .Resto-card {
     width: 340px;
-    height: 300px;
+    height: 310px;
     margin: 10px 0px 20px 0px;
   }
   .position_heart {
